@@ -1,0 +1,27 @@
+{
+  "ConnectionStrings": {
+    //"EhsSqlContext": "Server=ACC-WIN-SQL-01\\EHS_REPORTING;Database=enhesaSQL;User Id=mr_notif_acceptance;Password=_!?pz:9Vf4sY0PIxBJA+;"
+    // "EhsSqlContext": "Server=ENH-ID-SQL02;Database=enhesaSQL;User Id=contrib_user;Password=contrib_user;"
+    //"EhsSqlContext": "Server=localhost;Database=enhesaSQL;User Id=ehssqltest01;Password=Ehs$ql!est01"
+  },
+  "Serilog": {
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "Args": {
+          "theme": "Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme::Literate, Serilog.Sinks.Console",
+          "outputTemplate": "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj}"
+        }
+      }
+    ]
+  },
+  "Email": {
+    "FromEmail": "email-smtp.us-east-1.amazonaws.com",
+    "Password": "",
+    "Host": "email-smtp.us-east-1.amazonaws.com",
+    "Port": "25"
+  },
+  "MRContentProvider": {
+    "ProviderURL": "https://jsonplaceholder.typicode.com/todos/1"
+  }
+}

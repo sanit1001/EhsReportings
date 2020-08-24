@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Ehs.Reporting.MR": {
+      "commandName": "Project",
+      "commandLineArgs": "init -s false -t englishOnly",
+      "environmentVariables": {
+        "ENVIRONMENT": "local"
+      }
+    }
+  }
+}

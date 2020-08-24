@@ -1,0 +1,37 @@
+{
+  "ConnectionStrings": {
+    "EhsSqlContext": "Server=10.40.1.5;Database=enhesaSQL;User Id=dnn_user;Password=dnn_user"
+  },
+  "logging": {
+    "serviceName": "MRReportingTool",
+    "sinks": {
+      "console": {
+        "enabled": "true",
+        "minimumLevel": "Debug"
+      },
+      "splunk": {
+        "enabled": "true",
+        "host": "https://http-inputs-enhesa.splunkcloud.com/services/collector",
+        "eventCollectorToken": "E4E4BA97-BBC1-4885-ACA0-4D86D8AE666D",
+        "minimumLevel": "Debug"
+      }
+    }
+  },
+  "Email": {
+    "SenderEmail": "info@enhesa.com",
+    "SenderName": "Enhesa",
+    "UserName": "AKIAJEKC4HP7WI5H37HA",
+    "Password": "Am3XU2ldIphq/eq9p04Mxv5r9F2YoGt5rkbiM/4qQ0nO",
+    "Host": "email-smtp.us-east-1.amazonaws.com",
+    "Port": "25",
+    "ShouldSendEmailToTestUser": "true",
+    "TestUserEmail": "sahil.sachdeva@enhesa.com",
+    "DelayPerBatchMiliSeconds": 5000,
+    "BulkSize" :  100
+  },
+  "MRContentProvider": {
+    "ProviderURL": "https://devintranet.ehsmonitor.com/Clients/misc/newmailer_sw.asp?IDClientQuery={0}&sentToBatchQuery=1&clientNameQuery={1}",
+    "ProcessInBatchSize": 1,
+    "RequestTimeoutInMinutes": 10
+  }
+}

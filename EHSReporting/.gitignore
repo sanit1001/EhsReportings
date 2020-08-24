@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Ehs.Reporting.Test/bin/Debug/netcoreapp3.0
+/Ehs.Reporting.Test/obj
+/publish

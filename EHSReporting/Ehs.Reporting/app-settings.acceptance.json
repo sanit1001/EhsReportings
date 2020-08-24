@@ -1,0 +1,35 @@
+{
+  "ConnectionStrings": {
+    "EhsSqlContext": "Server=ACC-WIN-SQL-01\\EHS_REPORTING;Database=enhesaSQL;User Id=mr_notif_acceptance;Password=_!?pz:9Vf4sY0PIxBJA+;"
+  },
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.Console" ],
+    "MinimumLevel": {
+      "Default": "Debug",
+      "Override": {
+        "Microsoft": "Warning",
+        "System": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "MinimumLevel": "Information",
+        "Args": {
+          "theme": "Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme::Literate, Serilog.Sinks.Console",
+          "outputTemplate": "[{Timestamp:HH:mm:ss} {Level}] [{SourceContext}] [{EventId}] {Message}{NewLine}{Exception}"
+          //"restrictedToMinimumLevel": "Warning"
+        }
+      }
+    ]
+  },
+  "Email": {
+    "FromEmail": "sahil.sachdeva@enhesa.com",
+    "Password": "",
+    "Host": "smtp.gmail.com",
+    "Port": "587"
+  },
+  "MRContentProvider": {
+    "ProviderURL": "https://jsonplaceholder.typicode.com/todos/1"
+  }
+}

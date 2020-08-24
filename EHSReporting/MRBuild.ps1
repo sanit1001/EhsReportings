@@ -1,0 +1,1 @@
+dotnet publish .\Ehs.Reporting\Ehs.Reporting.sln -o ./publish -c release --self-contained true -r win-x64

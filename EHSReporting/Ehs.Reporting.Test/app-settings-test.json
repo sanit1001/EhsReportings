@@ -1,0 +1,19 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "ConnectionStrings": {
+    "EhsSqlContext": "Server=ENH-ID-SQL02;Database=enhesaSQL;User Id=contrib_user;Password=contrib_user;"
+  },
+  "Email": {
+    "FromEmail": "sahil.sachdeva@enhesa.com",
+    "Password": "",
+    "Host": "smtp.gmail.com",
+    "Port": "587"
+  }
+}
